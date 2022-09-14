@@ -1,0 +1,17 @@
+{% extends 'inmobiliaria/base.html' %}
+{% block titulo %} Agregar Inmueble {% endblock  %}
+
+{% block encabezado1 %} 
+    <h1>Agregar Inmueble</h1>
+    <form method="post">{% csrf_token %}
+        <p> Ingrese el inmueble  </p>
+        <p> Tipo de operacion    <input type="text" name="tipo_de_operacion">  </p>
+        <p> Precio  $ <input type="text" name="precio">  </p>
+        <p> Cantidad ambientes   <input type="text" name="cantidad_ambientes">  </p>
+        <p> Cantidad dormitorios    <input type="text" name="cantidad_dormitorios">  </p>
+        <p> Descripcion   <input type="text" name="descripcion">  </p>
+       
+        <input type="submit" value="Agregar">
+    </form>
+
+{% endblock %}

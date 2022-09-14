@@ -1,0 +1,14 @@
+{% extends 'inmobiliaria/base.html' %}
+
+{% block encabezado1 %} 
+
+
+
+    {% for inmueble in inmuebles %}
+    <p style="color: black; font-size: 22px;font-weight: 100px;"> <b><i><u>Resultado:</u></i></b>
+
+        <p style="color: black; font-size: 22px;font-weight: 100px;"> Tipo de operacion: {{inmueble.tipo_de_operacion}} / Precio: ${{inmueble.precio}} / Cant. de ambientes: {{inmueble.cantidad_ambientes}} / Cant de dormitorios: {{inmueble.cantidad_dormitorios}} / Descripcion: {{inmueble.descripcion}}
+        
+    {% endfor %}
+
+{% endblock %}

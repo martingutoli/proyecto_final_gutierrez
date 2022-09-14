@@ -1,0 +1,19 @@
+{% extends 'inmobiliaria/base.html' %}
+{% block titulo %} Registro Admin {% endblock  %}
+
+{% block encabezado1 %} 
+
+
+<form method="post">
+    {% if error  %}
+        <p>{{error}}</p>
+    {% endif %}
+
+    {% csrf_token %}
+    
+    {{form.as_p}}
+    
+    <input type= "submit" value= "Crear cuenta">
+
+</form>
+{% endblock %}

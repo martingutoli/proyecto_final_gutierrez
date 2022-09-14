@@ -1,0 +1,10 @@
+{% extends 'mensajes/base.html' %}
+
+{% block contenido %}
+    
+    {% for mensaje in object_list %}
+        <p>Nombre: {{mensaje.nombre}}</p>
+        <p>Consulta: {{mensaje.mensaje}}</p>
+    {% endfor %}
+
+{% endblock %}

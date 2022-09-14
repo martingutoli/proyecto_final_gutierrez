@@ -1,0 +1,16 @@
+{% extends 'inmobiliaria/base.html' %}
+
+{% block titulo %} Alquileres {% endblock  %}
+
+{% block encabezado1 %} 
+<h1 class="text-white font-weight-bold">Seccion alquileres</h1>
+{% endblock %}
+
+
+{% block contenido %}
+    
+    {% for inmueble in object_list %}
+        <p>{{inmueble.tipo_de_operacion}}  <a href="{% url 'inmuebles' inmueble.id %}"> Ver mas</a> </p>   
+    {% endfor %}
+
+{% endblock contenido %}

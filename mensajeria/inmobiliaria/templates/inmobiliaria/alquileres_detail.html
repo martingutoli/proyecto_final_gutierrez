@@ -1,0 +1,17 @@
+{% extends 'inmobiliaria/base.html' %}
+
+
+
+{% block contenido %}
+
+<img class="card-img-fluid" width = "300px" src="https://tse1.mm.bing.net/th?id=OIP.5nhMh0I9yHmQh-nYWu0zWgHaFj&pid=Api&P=0" alt="..." />
+                    
+    <p>Tipo de operacion: {{inmuebles.tipo_de_operacion}}</p>
+    <p>Precio: ${{inmuebles.precio}}</p>
+    <p>Cantidad ambientes: {{inmuebles.cantidad_ambientes}}</p>
+    <p>Cantidad dormitorios: {{inmuebles.cantidad_dormitorios}}</p>
+    <p>Descripcion: {{inmuebles.descripcion}}</p>
+
+
+{% endblock  %}
+
